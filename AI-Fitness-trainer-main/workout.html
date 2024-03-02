@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Cards</title>
+    <style>
+        .container {
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pull-Up</h1>
+        <p>A pull-up is an upper-body strength exercise.</p>
+        <button onclick="startWorkout('pull-up')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Push-Up</h1>
+        <p>It is a conditioning exercise performed in a prone position.</p>
+        <button onclick="startWorkout('push-up')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Sit-Up</h1>
+        <p>The sit-up is an abdominal endurance training exercise.</p>
+        <button onclick="startWorkout('sit-up')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Walking Exercise</h1>
+        <p>Walking is a simple and effective form of exercise.</p>
+        <button onclick="startWorkout('walk')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Squat</h1>
+        <p>A squat is a strength exercise in which the trainee lowers their hips.</p>
+        <button onclick="startWorkout('squat')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Jumping Jacks</h1>
+        <p>Jumping jacks are a full-body workout that engages multiple muscle groups.</p>
+        <button onclick="startWorkout('jumping-jacks')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Lunges</h1>
+        <p>Lunges are a lower-body exercise that targets the quadriceps, glutes, and hamstrings.</p>
+        <button onclick="startWorkout('lunges')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Leg Raises</h1>
+        <p>Leg raises target the lower abdominal muscles.</p>
+        <button onclick="startWorkout('leg-raises')">Start</button>
+    </div>
+    <div class="container">
+        <h1>Burpees</h1>
+        <p>Burpees are a full-body exercise that combines a squat, push-up, and jump.</p>
+        <button onclick="startWorkout('burpees')">Start</button>
+    </div>
+    
+    <script src="main.js"></script>
+    <script>
+        // Call the startWorkout function when the page is loaded or based on your needs
+        document.addEventListener('DOMContentLoaded', function() {
+            startWorkout('pull-up');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary meta tags, title, and styles -->
+    <!-- ... -->
+    <script src="static\script.js"></script>
+</head>
+<body>
+    <h1>Exercise Tracker</h1>
+
+    <!-- Exercise dropdown and card -->
+    <div>
+        <label for="exerciseSelect">Choose an exercise:</label>
+        <select id="exerciseSelect" class="exercise-dropdown">
+            <option value="1" data-name="Push-up">Push-up</option>
+            <option value="2" data-name="Pull-up">Pull-up</option>
+            <option value="3" data-name="Squat">Squat</option>
+            <option value="4" data-name="Walk">Walk</option>
+            <option value="5" data-name="Sit-up">Sit-up</option>
+            <option value="6" data-name="Jumping Jacks">Jumping Jacks</option>
+            <option value="7" data-name="Lunges">Lunges</option>
+            <option value="8" data-name="Leg Raises">Leg Raises</option>
+            <option value="9" data-name="Burpees">Burpees</option>
+        </select>
+        <button onclick="passSelectedExercise()">Start Selected Exercise</button>
+    </div>
+    <script>
+        function passSelectedExercise() {
+            const selectedExerciseValue = document.getElementById('exerciseSelect').value;
+            startSelectedExercise(selectedExerciseValue);
+        }
+    </script>
+    </body>
+</html>

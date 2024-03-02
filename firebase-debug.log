@@ -1,0 +1,259 @@
+[debug] [2024-02-24T17:10:35.194Z] ----------------------------------------------------------------------
+[debug] [2024-02-24T17:10:35.196Z] Command:       D:\Node JS\node.exe C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-24T17:10:35.197Z] CLI Version:   13.3.1
+[debug] [2024-02-24T17:10:35.197Z] Platform:      win32
+[debug] [2024-02-24T17:10:35.197Z] Node Version:  v18.17.1
+[debug] [2024-02-24T17:10:35.198Z] Time:          Sat Feb 24 2024 22:40:35 GMT+0530 (India Standard Time)
+[debug] [2024-02-24T17:10:35.198Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-24T17:10:35.205Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:10:35.205Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Abhilash\Desktop\hielo
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-24T17:10:40.102Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-24T17:10:40.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-24T17:10:40.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ai-fitness-trainer-a8e3e (Ai fitness trainer) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-02-24T17:10:41.609Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-24T17:10:41.609Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:10:43.236Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-24T17:10:43.236Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-02-24T17:10:43.237Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb [none]
+[debug] [2024-02-24T17:10:44.846Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb 200
+[debug] [2024-02-24T17:10:44.846Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb {"name":"projects/917714427221/locations/asia-southeast1/instances/ai-fitness-trainer-a8e3e-default-rtdb","project":"projects/917714427221","databaseUrl":"https://ai-fitness-trainer-a8e3e-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] Skipping overwrite of Realtime Database Security Rules.
+[info] The security rules defined in database.rules.json will be published when you run firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-02-24T17:10:46.965Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com [none]
+[debug] [2024-02-24T17:10:46.965Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:10:48.586Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com 200
+[debug] [2024-02-24T17:10:48.586Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com [omitted]
+[debug] [2024-02-24T17:10:48.586Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) [none]
+[debug] [2024-02-24T17:10:50.112Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) 200
+[debug] [2024-02-24T17:10:50.112Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) {"name":"projects/ai-fitness-trainer-a8e3e/databases/(default)","uid":"958e0a9a-2c9b-41dc-bda2-d191bb63fa62","createTime":"2024-02-24T17:10:15.940809Z","updateTime":"2024-02-24T17:10:15.940809Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-02-24T17:10:15.940809Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILXF3pC8xIQDMMmNz4C8xIQD"}
+[debug] [2024-02-24T17:10:50.112Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-02-24T17:10:50.112Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:10:50.112Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[debug] [2024-02-24T17:10:50.112Z] [iam] checking project ai-fitness-trainer-a8e3e for permissions ["firebase.projects.get"]
+[debug] [2024-02-24T17:10:50.113Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions [none]
+[debug] [2024-02-24T17:10:50.113Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:10:50.113Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:10:51.404Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions 200
+[debug] [2024-02-24T17:10:51.404Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-02-24T17:10:54.718Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/releases pageSize=10&pageToken=
+[debug] [2024-02-24T17:10:56.177Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/releases 200
+[debug] [2024-02-24T17:10:56.177Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/releases {"releases":[{"name":"projects/ai-fitness-trainer-a8e3e/releases/cloud.firestore","rulesetName":"projects/ai-fitness-trainer-a8e3e/rulesets/6e6e7345-1809-4083-8146-1836b40e759d","createTime":"2024-02-24T17:10:23.911548Z","updateTime":"2024-02-24T17:10:23.911548Z"}]}
+[debug] [2024-02-24T17:10:56.177Z] Found ruleset: projects/ai-fitness-trainer-a8e3e/rulesets/6e6e7345-1809-4083-8146-1836b40e759d
+[debug] [2024-02-24T17:10:56.177Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/rulesets/6e6e7345-1809-4083-8146-1836b40e759d [none]
+[debug] [2024-02-24T17:10:57.586Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/rulesets/6e6e7345-1809-4083-8146-1836b40e759d 200
+[debug] [2024-02-24T17:10:57.587Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/rulesets/6e6e7345-1809-4083-8146-1836b40e759d [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-02-24T17:10:59.780Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-02-24T17:10:59.783Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-02-24T17:11:01.293Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-02-24T17:11:01.293Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-02-24T17:11:01.745Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-02-24T17:11:01.745Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ai-fitness-trainer-a8e3e/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-02-24T17:11:01.748Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:11:01.748Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[debug] [2024-02-24T17:11:01.748Z] [iam] checking project ai-fitness-trainer-a8e3e for permissions ["firebase.projects.get"]
+[debug] [2024-02-24T17:11:01.749Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions [none]
+[debug] [2024-02-24T17:11:01.749Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:11:01.749Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:11:03.007Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions 200
+[debug] [2024-02-24T17:11:03.008Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:11:03.008Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-24T17:11:03.008Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:11:03.011Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-24T17:11:03.011Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:11:04.602Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-24T17:11:04.602Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-02-24T17:11:04.602Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-02-24T17:11:04.602Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:11:04.627Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-24T17:11:04.627Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-24T17:11:06.451Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-02-24T17:11:06.451Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-02-24T17:11:16.456Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-24T17:11:16.456Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:11:18.055Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-24T17:11:18.055Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-02-24T17:11:38.203Z] Running command with virtualenv: command="C:\Users\Abhilash\Desktop\hielo\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-02-24T17:11:40.362Z] Error: spawn "C:\Users\Abhilash\Desktop\hielo\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-02-24T17:15:08.659Z] ----------------------------------------------------------------------
+[debug] [2024-02-24T17:15:08.661Z] Command:       D:\Node JS\node.exe C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-02-24T17:15:08.661Z] CLI Version:   13.3.1
+[debug] [2024-02-24T17:15:08.662Z] Platform:      win32
+[debug] [2024-02-24T17:15:08.662Z] Node Version:  v18.17.1
+[debug] [2024-02-24T17:15:08.663Z] Time:          Sat Feb 24 2024 22:45:08 GMT+0530 (India Standard Time)
+[debug] [2024-02-24T17:15:08.663Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-24T17:15:08.672Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:15:08.673Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\users\Abhilash\Desktop\hielo
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-02-24T17:15:11.838Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-02-24T17:15:12.500Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-02-24T17:15:12.501Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ai-fitness-trainer-a8e3e (Ai fitness trainer) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-02-24T17:15:13.736Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-02-24T17:15:13.737Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:15.367Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com 200
+[debug] [2024-02-24T17:15:15.368Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-02-24T17:15:15.369Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb [none]
+[debug] [2024-02-24T17:15:17.071Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb 200
+[debug] [2024-02-24T17:15:17.071Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ai-fitness-trainer-a8e3e/locations/-/instances/ai-fitness-trainer-a8e3e-default-rtdb {"name":"projects/917714427221/locations/asia-southeast1/instances/ai-fitness-trainer-a8e3e-default-rtdb","project":"projects/917714427221","databaseUrl":"https://ai-fitness-trainer-a8e3e-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-02-24T17:15:20.715Z] >>> [apiv2][query] GET https://ai-fitness-trainer-a8e3e-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-02-24T17:15:20.881Z] <<< [apiv2][status] GET https://ai-fitness-trainer-a8e3e-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-02-24T17:15:20.881Z] <<< [apiv2][body] GET https://ai-fitness-trainer-a8e3e-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for ai-fitness-trainer-a8e3e-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-02-24T17:15:20.884Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com [none]
+[debug] [2024-02-24T17:15:20.884Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:22.473Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com 200
+[debug] [2024-02-24T17:15:22.473Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/firestore.googleapis.com [omitted]
+[debug] [2024-02-24T17:15:22.474Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) [none]
+[debug] [2024-02-24T17:15:24.275Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) 200
+[debug] [2024-02-24T17:15:24.275Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/databases/(default) {"name":"projects/ai-fitness-trainer-a8e3e/databases/(default)","uid":"958e0a9a-2c9b-41dc-bda2-d191bb63fa62","createTime":"2024-02-24T17:10:15.940809Z","updateTime":"2024-02-24T17:10:15.940809Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-02-24T17:10:15.940809Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMPZupO9xIQDMKX3oZa8xIQD"}
+[debug] [2024-02-24T17:15:24.275Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-02-24T17:15:24.275Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:15:24.275Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[debug] [2024-02-24T17:15:24.275Z] [iam] checking project ai-fitness-trainer-a8e3e for permissions ["firebase.projects.get"]
+[debug] [2024-02-24T17:15:24.276Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions [none]
+[debug] [2024-02-24T17:15:24.276Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:24.276Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:15:25.515Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions 200
+[debug] [2024-02-24T17:15:25.515Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] 
+=== Functions Setup
+[debug] [2024-02-24T17:15:30.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-24T17:15:30.108Z] > authorizing via signed-in user (abhilashvisakan3@gmail.com)
+[debug] [2024-02-24T17:15:30.108Z] [iam] checking project ai-fitness-trainer-a8e3e for permissions ["firebase.projects.get"]
+[debug] [2024-02-24T17:15:30.109Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions [none]
+[debug] [2024-02-24T17:15:30.109Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:30.109Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:15:31.339Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions 200
+[debug] [2024-02-24T17:15:31.339Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-24T17:15:31.339Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-02-24T17:15:31.339Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:31.342Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-02-24T17:15:31.342Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ai-fitness-trainer-a8e3e
+[debug] [2024-02-24T17:15:32.935Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com 200
+[debug] [2024-02-24T17:15:32.935Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-02-24T17:15:32.960Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com 200
+[debug] [2024-02-24T17:15:32.960Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ai-fitness-trainer-a8e3e/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-02-24T17:15:45.163Z] Running command with virtualenv: command="C:\users\Abhilash\Desktop\hielo\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-02-24T17:15:46.894Z] Error: spawn "C:\users\Abhilash\Desktop\hielo\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\Abhilash\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+[error] 
+[error] Error: An unexpected error has occurred.
